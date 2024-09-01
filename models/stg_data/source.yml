@@ -8,3 +8,7 @@ sources:
       - name: STG_CUSTOMERS
       - name: STG_PAYMENTS
       - name: STG_ORDERS
+      - name: emp
+      - name: STG_PRODUCT_DATA
+      
+      
