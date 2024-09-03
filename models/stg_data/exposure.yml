@@ -15,7 +15,6 @@ exposures:
       - ref('order_merge')
       - ref('order_macro_data')
       - ref('orders')
-      - ref('payments')
       - source('datafeed_shared_schema','STG_ORDERS')
       - source('datafeed_shared_schema','STG_CUSTOMERS')
       - source('datafeed_shared_schema','STG_PAYMENTS')
