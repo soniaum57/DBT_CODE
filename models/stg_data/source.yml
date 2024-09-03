@@ -16,10 +16,7 @@ sources:
             - name: status
               tests:
                 - accepted_values:
-                      values: ['placed', 'shipped', 'completed', 'returned', 'return_pending']
-
-      - name : CUSTOMERS
-
+                      values: ['placed', 'return', 'shipped', 'completed', 'returned', 'return_pending']
       - name: emp
       - name: STG_PRODUCT_DATA
       
