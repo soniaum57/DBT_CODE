@@ -1,0 +1,26 @@
+version: 2
+
+exposures:
+
+  - name: weekly_metrics
+    label: AUMSONI by the Week
+    type: dashboard
+    maturity: high
+    description: 
+     For more exposure about project details
+
+    depends_on:
+      - ref('final')
+      - ref('emp_final')
+      - ref('order_merge')
+      - ref('order_macro_data')
+      - ref('orders')
+      - source('datafeed_shared_schema','STG_ORDERS')
+      - source('datafeed_shared_schema','STG_CUSTOMERS')
+      - source('datafeed_shared_schema','STG_PAYMENTS')
+      - source('datafeed_shared_schema','emp')
+      - source('datafeed_shared_schema','STG_PRODUCT_DATA')
+  
+    owner:
+      name:  AUMSONI
+      email: soniaum57@gmail.com
